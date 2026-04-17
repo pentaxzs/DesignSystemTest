@@ -1,6 +1,11 @@
-import { Button } from '@/design-system/components';
+import { redirect } from 'next/navigation';
 
 export default function Page() {
+  redirect('/email');
+}
+
+// ── Button showcase (kept for local reference) ──────────────────
+function _ButtonShowcase() {
   return (
     <main className="p-10 flex flex-col gap-10 bg-surface min-h-screen">
       <h1 className="text-headline-md font-medium text-on-surface">
